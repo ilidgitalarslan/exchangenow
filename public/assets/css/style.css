@@ -1,0 +1,144 @@
+.crypto-exchange-widget {
+    height: 356px;
+    width: 100%;
+    border: none;
+    margin-top: 200px;
+}
+
+.crypto-exchange-widget-btn {
+    display: inline-block;
+    width: auto;
+    padding:0.60rem 2rem;
+    font-size: 0.90rem;
+
+    outline: none;
+    border-radius: 3px;
+    color: #fff;
+    border: 1px solid #F8785E;
+    background-color: #F8785E;
+
+    -webkit-transition: all 0.3s 0s ease;
+    -moz-transition: all 0.3s 0s ease;
+    -o-transition: all 0.3s 0s ease;
+    transition: all 0.3s 0s ease;
+
+    cursor: pointer;
+}
+
+.crypto-exchange-widget-btn:hover {
+    color: #fff;
+    border: 1px solid #f95b3b;
+    background-color: #f95b3b;
+}
+
+.crypto-exchange-widget-btn:active {
+    color: #fff;
+    border: 1px solid #f95b3b;
+    background-color: #f95b3b;
+}
+
+.swap-widget-button.theme-dark {
+    color: #fff;
+    border: 1px solid #333333;
+    background-color: #333333;
+}
+
+.swap-widget-button.theme-dark:hover {
+    border: 1px solid #121212;
+    background-color: #121212;
+}
+
+.swap-widget-button.theme-dark:active {
+    border: 1px solid #333333;
+    background-color: #333333;
+}
+
+.swap-widget-button {
+    line-height: normal;
+}
+
+.crypto-exchange-widget-template {
+    position: absolute;
+    box-sizing: border-box;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    top: 50%;
+    max-height: 100%;
+    width: 100%;
+    max-width: 960px;
+}
+
+.crypto-exchange-widget-template input {
+    box-shadow: none;
+    background-color: transparent;
+    height: auto;
+}
+
+.kyber_widget-widget-footer {
+    display: none;
+}
+
+.crypto-exchange-widget-overlay {
+    background-color: rgba(0, 0, 0, .7);
+    position: fixed;
+    z-index: 99999;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: crypto_swap_fadein .3s;
+}
+
+.crypto_swap_hidden-overlay {
+    animation: crypto_swap_fadeout .3s forwards;
+}
+
+.crypto-exchange-widget-overlay::before {
+    content: "✕";
+    position: absolute;
+    top: 16px;
+    right: 8px;
+    display: inline-block;
+    padding: 15px 0;
+    font-size: 36px;
+    color: #fff;
+    line-height: 0;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.crypto-exchange-widget-iframe {
+    position: absolute;
+    max-width: 990px;
+    height: 650px;
+    width: 100%;
+    max-height: 90%;
+    box-sizing: border-box;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    top: 50%;
+    border: 0;
+}
+
+.crypto-exchange-widget.embedded-iframe,
+.crypto-exchange-widget-iframe.embedded-iframe {
+    transform: translateX(-50%);
+    top: 0;
+}
+
+@keyframes crypto_swap_fadeout {
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes crypto_swap_fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

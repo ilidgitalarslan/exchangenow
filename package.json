@@ -1,0 +1,19 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "next build",
+        "production": "next build"
+    },
+    "devDependencies": {
+        "axios": "^0.21",
+        "lodash": "^4.17.19",
+        "next": "^12.0.7",
+        "postcss": "^8.1.14",
+        "sass": "^1.36.0",
+        "sass-loader": "^8.0.2",
+        "tailwindcss": "^2.0.1",
+        "vue": "^2.5.17",
+        "vue-loader": "^15.9.8"
+    }
+}
